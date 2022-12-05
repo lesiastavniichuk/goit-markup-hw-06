@@ -18,18 +18,18 @@
 
 <body class="body">
 
-      <!----------------------HEADER---------------------->
-  
+  <!----------------------HEADER---------------------->
+
   <header class="header">
     <div class="container">
-  
+
       <!----------------------LOGO---------------------->
-  
+
       <a href="./index.html" lang="en" class="logo link list">
         <span class="accent">Web</span>Studio</a>
-  
+
       <!-----------------------NAV----------------------->
-  
+
       <nav class="header-nav">
         <ul class="header-list  list">
 
@@ -70,7 +70,7 @@
     </div>
   </header>
 
-<!------------------MAIN------------------>
+  <!------------------MAIN------------------>
 
   <main>
     <!-- HERO -->
@@ -344,7 +344,7 @@
                 <a href="https://goo.gl/maps/UvmpvFEawBBhTNfw9" class="contactfooter link">м. Київ, пр-т Лесі Українки,
                   26</a>
               </li>
-              </li>
+
               <li>
                 <a href="mailto:info@devstudio.com" class="contactfooter link">info@devstudio.com</a>
               </li>
@@ -381,8 +381,11 @@
         </ul>
       </div>
     </div>
-    </div>
+    
   </footer>
+
+  <!--------------------MODAL-------------------->
+
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal-close" data-modal-close>
@@ -390,6 +393,37 @@
           <use href="./img/icons-defs.svg#icon-close"></use>
         </svg>
       </button>
+      <h2 class="modal-head">Залиште свої дані, ми вам передзвонимо</h2>
+
+      <div class="form-field">
+        <label for="name">Ім'я</label>
+        <input type="text" name="name" id="name">
+      </div>
+
+      <div class="form-field">
+        <label for="tel">Телефон</label>
+        <input type="tel" name="tel" id="tel">
+      </div>
+
+      <div class="form-field">
+        <label for="mail">Пошта</label>
+        <input type="email" name="mail" id="mail">
+      </div>
+
+      <div>
+        <label for="comment">Коментар</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      </div>
+
+      <div>
+        <input type="checkbox" name="policy" id="policy">
+        <label for="policy">Погоджуюся з розсилкою та приймаю Умови договору</label>
+      </div>
+
+
+
+
+      <button type="submit" class="btn">Відправити</button>
     </div>
   </div>
   <script src="./js/modal.js"></script>
