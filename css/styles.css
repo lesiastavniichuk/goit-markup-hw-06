@@ -802,11 +802,11 @@ cursor: pointer;
 }
 
 
- .form-field{
-  position: relative;
- 
+.form-field{
+position: relative;
 margin-bottom: 28px;
  }
+
  .form-field label{
 font-weight: 400;
 font-size: 12px;
@@ -822,7 +822,7 @@ line-height: 14px;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
  }
-.modal-text{
+ .modal-text{
    font-weight: 400;
 font-size: 12px;
 line-height: 14px;
@@ -834,6 +834,7 @@ color: rgba(117, 117, 117, 0.5);
   padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+
 }
 .modal-input:hover,
 .modal-input:focus
@@ -864,15 +865,78 @@ border: 1px solid #2196F3;
 + .modal-icons-cont{
   fill: #2196F3;
 }
-.checkbox{
-  font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: #757575;
-margin-left: 52px;
-}
+
 .btn-submit{
   width: 200px;
   height: 50px;
+  cursor: pointer;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
+.label-coment{
+ font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+color: #757575;
+margin-bottom: 4px; 
+}
+.form-field-coment{
+  margin-bottom: 20px;
+}
+.checkbox-label{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  line-height: 1.71;
+ color: #757575;
+}
+
+
+.checkbox{
+appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-icons-checkbox{
+ display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 4px;
+  cursor: pointer
+}
+.checkbox-link {
+  display: inline;
+  color: var(--primary-link-color);
+  margin-left: 3px;
+  font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+letter-spacing: 0.03em;
+
+color: #757575;
+}
+
+.checkbox:checked + .modal-icons-checkbox{
+  background-color: var(--primary-link-color);
+  background-image: url(../img/galochka.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--primary-link-color);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+  
