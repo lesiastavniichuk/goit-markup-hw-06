@@ -717,6 +717,43 @@ display: flex;
 .footer-soc-icons{
   fill: currentColor}
 
+  .right-footer{
+    margin-left: 93px;
+  }
+
+  .right-footer>p{
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 20px;
+  }
+
+.right-footer-input{
+  width: 385px;
+  padding: 15px;
+  background: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+}
+.right-footer-input::placeholder{
+  font-family: 'Roboto';
+font-style: normal;
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+/* identical to box height, or 125% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
+}
+
 /*------MODAL------ */
 
 .backdrop {
@@ -754,10 +791,10 @@ display: flex;
   border-radius: 4px;
   opacity: 1;
   transform: scale(1) translate(-50%, -50%);
-  transition:  250ms var(--timing-function), 
-   250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
    padding: 40px 40px 50px 40px;
 }
+
 .modal-close{
   position: absolute;
   top: 8px;
@@ -772,6 +809,7 @@ display: flex;
   background-color: rgba(255, 255, 255, 1);
   transition: 250ms var(--timing-function);
 }
+
 .modal-icons {
   position: absolute;
   top: 50%;
@@ -779,6 +817,15 @@ display: flex;
   transform: translate(-50%, -50%);
   color: #757575;
 }
+
+.cross-modal-icons{
+  fill: #757575;
+}
+
+.cross-modal-icons:hover{
+  fill: #2196F3;
+}
+
 
 .modal-head{
 font-weight: 700;
@@ -790,24 +837,109 @@ color: #212121;
 margin-bottom: 30px;
 }
 
+.btn-submit{
+width: 200px;
+height: 50px;
+cursor: pointer;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
 .modal-input{
-  display: block;
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+
+width: 100%;
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-color: green;
 border-radius: 4px;
 padding: 12px 15px 12px 42px;
 color:#757575;
 cursor: pointer;
+
+}
+
+.modal-input:focus
+.modal-input:hover{
+  border-color: red;
+  outline: transparent;
+}
+
+.modal-input::placeholder{
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field{
+  margin-bottom: 28px;
+}
+ .form-field label{
+  display: block;
+margin-bottom: 4px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+color: #757575;
+ }
+.modal-text{
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+resize:none;
+width: 100%;
+height: 120px;
+padding: 12px 16px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+
+.modal-icons-cont{
+  position: absolute;
+}
+
+.modal-input-wrapper{
+  position: relative;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-icons-cont{
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  
 }
 
 
-.form-field{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .form-field{
 position: relative;
 margin-bottom: 28px;
  }
 
- .form-field label{
+.form-field label{
 font-weight: 400;
 font-size: 12px;
 line-height: 1.17;
@@ -815,64 +947,61 @@ letter-spacing: 0.01em;
 color: #757575;
 margin-bottom: 4px;
  }
- .modal-input::placeholder{
-  font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-color: rgba(117, 117, 117, 0.5);
- }
- .modal-text{
-   font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.01em;
-color: rgba(117, 117, 117, 0.5);
- resize:none;
-  width: 100%;
-  height: 120px;
-  padding: 12px 16px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
 
+.modal-input{
+display: block;
+width: 100%;
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+padding: 12px 15px 12px 42px;
+color:#757575;
+cursor: pointer;
 }
+
+
+ 
 .modal-input:hover,
-.modal-input:focus
-{
+.modal-input:focus{
 border: 1px solid #2196F3;
 }
+
+.modal-text{
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+resize:none;
+width: 100%;
+height: 120px;
+padding: 12px 16px;
+border: 1px solid #757575;
+border-radius: 4px;
+}
+
 .modal-text:hover,
 .modal-text:focus{
   border: 1px solid #2196F3;
 }
 
-.cross-modal-icons{
-  fill: #757575;;
-}
 
-.cross-modal-icons:hover{
-  fill: #2196F3;
-}
+
 
 .modal-icons-cont{
   position: absolute;
-  bottom: 15px;
-  left: 12px;
- fill: #212121;
+bottom: 15px;
+left: 12px;
+fill: #212121;
 }
 
 .modal-input:focus 
 + .modal-icons-cont{
   fill: #2196F3;
+
 }
 
-.btn-submit{
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-}
+
 .label-coment{
  font-weight: 400;
 font-size: 12px;
@@ -881,9 +1010,11 @@ letter-spacing: 0.01em;
 color: #757575;
 margin-bottom: 4px; 
 }
+
 .form-field-coment{
   margin-bottom: 20px;
 }
+
 .checkbox-label{
   display: flex;
   align-items: center;
@@ -902,8 +1033,6 @@ appearance: none;
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -912,22 +1041,29 @@ appearance: none;
   width: 16px;
   height: 15px;
   margin-right: 7px;
-  border: 2px solid var(--secondary-text-color);
+  border: 2px solid #212121;
   border-radius: 4px;
   cursor: pointer
 }
+
+.checkbox-text{
+  display: inline;
+  color: #757575;
+  margin-left: 3px;
+  font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+}
+
 .checkbox-link {
   display: inline;
   color: var(--primary-link-color);
   margin-left: 3px;
   font-weight: 400;
 font-size: 14px;
-line-height: 24px;
-/* identical to box height, or 171% */
-
+line-height: 1.71;
 letter-spacing: 0.03em;
-
-color: #757575;
 }
 
 .checkbox:checked + .modal-icons-checkbox{
@@ -938,5 +1074,6 @@ color: #757575;
   border-color: var(--primary-link-color);
   background-repeat: no-repeat;
   cursor: pointer;
+  transition: 250ms var(--timing-function);
 }
-  
+   */
