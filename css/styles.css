@@ -204,23 +204,11 @@ padding: 32px 0px;
 /* -------------------HERO------------------- */
 
 
-.hero {
-  /* text-align: center;
-background-color: var(--foncolor);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/hero_bg.jpg);
-width: 100%;
-margin: auto; */
-}
-
 .hero-center{
-  padding-top: 200px;
-  padding-bottom: 200px;
-  padding-left: 15px;
-  /* width: 100%; */
-    text-align: center;
+padding-top: 200px;
+padding-bottom: 200px;
+padding-left: 15px;
+text-align: center;
 background-color: var(--foncolor);
 background-repeat: no-repeat;
 background-position: center;
