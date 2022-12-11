@@ -66,10 +66,10 @@ margin: 0 auto;
 
 /*------------------HEADER------------------*/
 
-.header {
-  background-color: #FFFFFF;
+.header-container{
+ background-color: #FFFFFF;
   outline: 1px solid #eeeeee;
-  border: none;
+  border: none; 
 }
 
 header .container{
@@ -205,21 +205,29 @@ padding: 32px 0px;
 
 
 .hero {
-  text-align: center;
+  /* text-align: center;
 background-color: var(--foncolor);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/hero_bg.jpg);
 width: 100%;
-margin: auto;
+margin: auto; */
 }
 
 .hero-center{
   padding-top: 200px;
   padding-bottom: 200px;
   padding-left: 15px;
-  width: 100%;
+  /* width: 100%; */
+    text-align: center;
+background-color: var(--foncolor);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/hero_bg.jpg);
+min-width: 1600px;
+margin: auto;
 }
 
 .title{
@@ -309,7 +317,9 @@ max-width: 300px;
 
 /*------DEVELOPMENT------ */
 
-
+.development{
+ 
+}
 
 .work-list-item{
   width: calc((100%-60px)/3);
@@ -368,16 +378,19 @@ justify-content: center;
 /*------TEAM------ */
 
 .team{
-background:#F5F4FA ;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
-padding-bottom: 94px;
-padding-top: 94px;
-
 }
+
+.team-container{
+background:#F5F4FA ;
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
 
 .team-soc-list{
 display: flex;
@@ -631,16 +644,11 @@ width: 370px;
 /*------FOOTER------ */
 
 
-.footer{
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color:var(--foncolor);
- margin: auto;
- display: flex;
-}
 .footer-cont{
    display: flex;
- 
+background-color:var(--foncolor);
+padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-container{
   width: 231px;
