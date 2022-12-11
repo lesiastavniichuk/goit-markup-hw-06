@@ -515,7 +515,8 @@ padding-bottom: 94px;
 /* --------------------------- HERO------------------------- */
 
 .header{
-  /* border: 1px solid #ECECEC; */
+  border: 1px solid #ECECEC;
+  width: 1200px;
 }
 .button-work-list{
   display: flex; 
